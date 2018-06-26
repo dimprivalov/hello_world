@@ -11,4 +11,3 @@ deploy:
   skip_cleanup: true
   script:
   - curl -T hello_world-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -udimprivalov:$BINTRAY_API_KEY "https://api.bintray.com/content/dimprivalov/hello_world/hello_world-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
-  #- curl -T <FILE.EXT> -udimprivalov:<API_KEY> https://api.bintray.com/content/dimprivalov/hello_world/<YOUR_COOL_PACKAGE_NAME>/<VERSION_NAME>/<FILE_TARGET_PATH>
